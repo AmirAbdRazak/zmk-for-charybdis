@@ -113,24 +113,24 @@
         compatible = "alps,ec11";
         a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;
+        steps = <48>;
         status = "disabled";
-		pulses-per-detent = <2>; 
+	
     };
 
     left_encoder_2: encoder_left_2 {
         compatible = "alps,ec11";
      	a-gpios = <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;
+        steps = <48>;
         status = "disabled";
-		pulses-per-detent = <2>; 
+		
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder_1 &left_encoder_2>;
-		triggers-per-rotation = <24>;
+		triggers-per-rotation = <12>;
     };
 };
 &physical_layout_0{
