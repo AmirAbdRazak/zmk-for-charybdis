@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+// &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 
 &lt {
@@ -21,7 +21,7 @@
 
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <10>;       // 300
+    time-to-max-speed-ms = <30>;       // 300
     delay-ms = <0>;                   // 0
 };
 
@@ -39,7 +39,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <10>;
+        tap-ms = <50>;
     };
 
     // 左右滚动编码器行为
