@@ -105,11 +105,10 @@
                                               &mkp MB1   &mkp MB2    &kp ENTER
             >;
 
-            sensor-bindings =
-                    // <&inc_dec_kp PG_UP PG_DN>,
-                <&scroll_vertical_encoder>,
+            sensor-bindings = <&inc_dec_kp A B>;
+                //<&scroll_vertical_encoder>,
                 // 编码器1：上下滚动,,
-                <&scroll_horizontal_encoder>;
+               // <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
         };
@@ -123,11 +122,10 @@
                                                   &kp LEFT_ALT     &kp SPACE        &to 0         &none      &none
                                                                    &mkp MB1         &mkp MB2      &kp ENTER
             >;
-sensor-bindings =
-                    // <&inc_dec_kp PG_UP PG_DN>,
-                <&scroll_vertical_encoder>,
+sensor-bindings = <&inc_dec_kp A B>;
+                //<&scroll_vertical_encoder>,
                 // 编码器1：上下滚动,,
-                <&scroll_horizontal_encoder>;
+               // <&scroll_horizontal_encoder>;
 
 
         };
