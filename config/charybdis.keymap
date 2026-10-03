@@ -28,15 +28,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        tab_esc: tab_esc {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            quick-tap-ms = <90>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     combos {
@@ -46,6 +37,13 @@
             timeout-ms = <30>;
             key-positions = <26 27>;
             bindings = <&kp BSPC>;
+        };
+
+        combo_tab {
+            timeout-ms = <30>;
+            key-positions = <1 2>;
+            layers = <BASE>;
+            bindings = <&kp TAB>;
         };
 
         combo_lbkt {
@@ -127,7 +125,7 @@
 &kp W       &kp G       &kp D        &kp F        &kp B             &kp Q    &kp L        &kp U        &kp O       &kp Y
 &hs LGUI R  &hm LALT S  &hm LSHFT T  &hm LCTRL H  &kp K             &kp J    &hm RCTRL N  &hm RSHFT E  &hm LALT A  &hs RGUI I
 &kp X       &kp C       &kp M        &kp P        &kp V             &kp Z    &kp COMMA    &kp DOT      &kp SQT     &kp FSLH
-                        &sl NUM      &kp SPACE    &tab_esc TAB ESC  &kp RET  &sl SYM      &to NAV
+                        &sl NUM      &kp SPACE    &kp ESC           &kp RET  &sl SYM      &to NAV
             >;
         };
 
