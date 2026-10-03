@@ -43,62 +43,62 @@
         compatible = "zmk,combos";
 
         combo_bspc {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <26 27>;
             bindings = <&kp BSPC>;
         };
 
         combo_lbkt {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <6 7>;
             layers = <BASE>;
             bindings = <&kp LBKT>;
         };
 
         combo_rbkt {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <6 7>;
             layers = <SYM>;
             bindings = <&kp RBKT>;
         };
 
         combo_lpar {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <2 3>;
             layers = <BASE>;
             bindings = <&kp LPAR>;
         };
 
         combo_rpar {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <2 3>;
             layers = <SYM>;
             bindings = <&kp RPAR>;
         };
 
         combo_lbrc {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <22 23>;
             layers = <BASE>;
             bindings = <&kp LBRC>;
         };
 
         combo_rbrc {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <22 23>;
             layers = <SYM>;
             bindings = <&kp RBRC>;
         };
 
         combo_colon {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <15 16>;
             layers = <BASE>;
             bindings = <&kp COLON>;
         };
 
         combo_semi {
-            timeout-ms = <30>;
+            timeout-ms = <45>;
             key-positions = <13 14>;
             layers = <BASE>;
             bindings = <&kp SEMI>;
@@ -154,9 +154,9 @@
         function_layer {
             display-name = "Fun";
             bindings = <
-&sys_reset   &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &bt BT_SEL 0    &kp DEL  &kp F1  &kp F2  &kp F3  &kp F10
+&sys_reset   &trans      &out OUT_USB  &out OUT_BLE  &bt BT_SEL 0    &kp DEL  &kp F1  &kp F2  &kp F3  &kp F10
 &bootloader  &kp LALT    &kp LSHFT     &kp LCTRL     &bt BT_SEL 1    &kp INS  &kp F4  &kp F5  &kp F6  &kp F11
-&trans       &trans      &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 2    &trans   &kp F7  &kp F8  &kp F9  &kp F12
+&bt BT_CLR   &trans      &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 2    &trans   &kp F7  &kp F8  &kp F9  &kp F12
                          &trans        &trans        &trans          &trans   &trans  &trans
             >;
         };
