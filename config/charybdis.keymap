@@ -167,7 +167,7 @@
 &trans    &trans    &trans     &trans     &trans    &trans  &kp HOME   &kp UP    &kp END    &trans
 &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans
 &trans    &trans    &trans     &trans     &trans    &trans  &kp PG_UP  &trans    &kp PG_DN  &trans
-                    &trans     &trans     &trans    &trans  &trans     &trans
+                    &trans     &trans     &trans    &trans  &to BASE   &trans
             >;
         };
     };
